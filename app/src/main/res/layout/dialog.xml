@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageUp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/titleInput"
+        android:layout_below="@id/imageUp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+    <EditText
+        android:id="@+id/titleUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:hint="Title"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/titleInput2"
+        android:layout_below="@id/titleInput"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+    <EditText
+        android:id="@+id/descriptionUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:hint="Description"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/titleInput2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="50dp"
+        android:background="#15F8CB"
+        android:text="update"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
